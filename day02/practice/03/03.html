@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        div{
-            position:absolute;
+        div {
+            position: absolute;
             text-align: center;
-            font-size:13px;
-            font-family: STHeiti,serif;
-            color:white;
+            font-size: 13px;
+            font-family: STHeiti, serif;
+            color: white;
         }
+
         div.title {
             width: 131px;
             height: 30px;
@@ -19,307 +20,254 @@
         }
 
         div.der {
-            margin-top:50px;
+            margin-top: 40px;
             width: 960px;
             height: 27px;
             background-image: url("images/nav_bg.gif");
         }
 
-        .der>div#first {
-            margin-left:55px;
-            margin-top:7px;
+
+        .der > div.bar1 {
+            position: absolute;
+            margin-top: 7px;
             width: 1px;
             height: 14px;
-            background-color:red;
+            background-color: #84060C;
         }
 
-        .der>div#first-1{
-            margin-left:92px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
+        .der > div.bar2 {
+            position: absolute;
+            margin-top: 7px;
+            width: 1px;
+            height: 14px;
+            background-color: #D22828;
         }
 
-        .der>div#first-2{
-            margin-left:136px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-3{
-            margin-left:180px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-4{
-            margin-left:224px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-5{
-            margin-left:268px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-6{
-            margin-left:312px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-7{
-            margin-left:356px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-8{
-            margin-left:400px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-9{
-            margin-left:444px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-10{
-            margin-left:488px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-11{
-            margin-left:532px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-
-        .der>div#first-12{
-            margin-left:576px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-
-        .der>div#first-13{
-            margin-left:620px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-14{
-            margin-left:664px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-15{
-            margin-left:708px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-16{
-            margin-left:752px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#first-17{
-            margin-left:796px;
-            margin-top:13px;
-            width: 14px;
-            height: 2px;
-            background-image:url("images/nav_bg.gif");
-            -webkit-transform: rotate(-90deg);
-        }
-
-        .der>div#text-1{
-            margin-left:11px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-2{
-            margin-left:55px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-3{
+        .bar1#a1{
             margin-left:99px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
         }
-
-        .der>div#text-4{
+        .bar1#a2{
             margin-left:143px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
         }
-
-        .der>div#text-5{
+        .bar1#a3{
             margin-left:187px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
         }
-
-        .der>div#text-6{
+        .bar1#a4{
             margin-left:231px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
         }
-
-        .der>div#text-7{
+        .bar1#a5{
             margin-left:275px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
         }
-
-        .der>div#text-8{
+        .bar1#a6{
             margin-left:319px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
         }
-
-        .der>div#text-9{
+        .bar1#a7{
             margin-left:363px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
+        }
+        .bar1#a8{
+            margin-left:412px;
+        }
+        .bar1#a9{
+            margin-left:456px;
         }
 
-        .der>div#text-10{
-            margin-left:407px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
+        .bar1#a10{
+            margin-left:500px;
+        }
+        .bar1#a11{
+            margin-left:544px;
+        }
+        .bar1#a12{
+            margin-left:588px;
+        }
+        .bar1#a13{
+            margin-left:632px;
+        }
+        .bar1#a14{
+            margin-left:676px;
+        }
+        .bar1#a15{
+            margin-left:720px;
+        }
+        .bar1#a16{
+            margin-left:764px;
+        }
+        .bar1#a17{
+            margin-left:808px;
+        }
+        .bar2#b1{
+            margin-left:100px;
+        }
+        .bar2#b2{
+            margin-left:144px;
+        }
+        .bar2#b3{
+            margin-left:188px;
+        }
+        .bar2#b4{
+            margin-left:232px;
+        }
+        .bar2#b5{
+            margin-left:276px;
+        }
+        .bar2#b6{
+            margin-left:320px;
+        }
+        .bar2#b7{
+            margin-left:364px;
+        }
+        .bar2#b8{
+            margin-left:413px;
+        }
+        .bar2#b9{
+            margin-left:457px;
+        }
+        .bar2#b10{
+            margin-left:501px;
+        }
+        .bar2#b11{
+            margin-left:545px;
+        }
+        .bar2#b12{
+            margin-left:589px;
+        }
+        .bar2#b13{
+            margin-left:633px;
+        }
+        .bar2#b14{
+            margin-left:677px;
+        }
+        .bar2#b15{
+            margin-left:721px;
+        }
+        .bar2#b16{
+            margin-left:765px;
+        }
+        .bar2#b17{
+            margin-left:809px;
+        }
+        .der > div#text-1 {
+            margin-left: 11px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-2 {
+            margin-left: 55px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-3 {
+            margin-left: 99px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-4 {
+            margin-left: 143px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-5 {
+            margin-left: 187px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-6 {
+            margin-left: 231px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-7 {
+            margin-left: 275px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-8 {
+            margin-left: 319px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-9 {
+            margin-left: 363px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-x {
+            margin-left: 400px;
+            margin-top: 2px;
+            width: 8px;
+            height: 6px;
+        }
+        .der > div#text-10 {
+            margin-left: 412px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-11 {
+            margin-left: 456px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-12 {
+            margin-left: 500px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-13 {
+            margin-left: 544px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-14 {
+            margin-left: 588px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-15 {
+            margin-left: 632px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-16 {
+            margin-left: 676px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-17 {
+            margin-left: 720px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-18 {
+            margin-left: 764px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
+        }
+        .der > div#text-19 {
+            margin-left: 808px;
+            margin-top: 6px;
+            width: 44px;
+            height: 27px;
         }
 
-        .der>div#text-11{
-            margin-left:451px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
 
-        .der>div#text-12{
-            margin-left:495px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-13{
-            margin-left:539px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-14{
-            margin-left:583px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-15{
-            margin-left:627px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-16{
-            margin-left:671px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-17{
-            margin-left:715px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-18{
-            margin-left:761px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
-
-        .der>div#text-19{
-            margin-left:805px;
-            margin-top:6px;
-            width:44px;
-            height:27px;
-        }
 
 
 
@@ -331,77 +279,146 @@
 </div>
 
 <div class="der">
-    <div id="first">
+    <div style="margin-left: 55px" class="bar2">
 
     </div>
 
-    <div id="first-1">
+    <div class="bar1" id="a1">
 
     </div>
 
-    <div id="first-2">
+    <div class="bar1" id="a2">
 
     </div>
 
-    <div id="first-3">
+    <div class="bar1" id="a3">
 
     </div>
 
-    <div id="first-4">
+    <div class="bar1" id="a4">
 
     </div>
 
-    <div id="first-5">
+    <div class="bar1" id="a5">
 
     </div>
 
-    <div id="first-6">
+    <div class="bar1" id="a6">
 
     </div>
 
-    <div id="first-7">
+    <div class="bar1" id="a7">
 
     </div>
 
-    <div id="first-8">
+    <div class="bar1" id="a8">
 
     </div>
 
-    <div id="first-9">
+    <div class="bar1" id="a9">
 
     </div>
 
-    <div id="first-10">
+    <div class="bar1" id="a10">
 
     </div>
 
-    <div id="first-11">
+    <div class="bar1" id="a11">
 
     </div>
 
-    <div id="first-12">
+    <div class="bar1" id="a12">
 
     </div>
 
-    <div id="first-13">
+    <div class="bar1" id="a13">
 
     </div>
 
-    <div id="first-14">
+    <div class="bar1" id="a14">
 
     </div>
 
-    <div id="first-15">
+    <div class="bar1" id="a15">
 
     </div>
 
-    <div id="first-16">
+    <div class="bar1" id="a16">
 
     </div>
 
-    <div id="first-17">
+    <div class="bar1" id="a17">
 
     </div>
+
+    <div class="bar2" id="b1">
+
+    </div>
+
+    <div class="bar2" id="b2">
+
+    </div>
+
+    <div class="bar2" id="b3">
+
+    </div>
+
+    <div class="bar2" id="b4">
+
+    </div>
+
+    <div class="bar2" id="b5">
+
+    </div>
+
+    <div class="bar2" id="b6">
+
+    </div>
+
+    <div class="bar2" id="b7">
+
+    </div>
+
+    <div class="bar2" id="b8">
+
+    </div>
+
+    <div class="bar2" id="b9">
+
+    </div>
+
+    <div class="bar2" id="b10">
+
+    </div>
+
+    <div class="bar2" id="b11">
+
+    </div>
+
+    <div class="bar2" id="b12">
+
+    </div>
+
+    <div class="bar2" id="b13">
+
+    </div>
+
+    <div class="bar2" id="b14">
+
+    </div>
+
+    <div class="bar2" id="b15">
+
+    </div>
+
+    <div class="bar2" id="b16">
+
+    </div>
+
+    <div class="bar1" id="b17">
+
+    </div>
+
 
     <div id="text-1">
         首页
@@ -437,6 +454,10 @@
 
     <div id="text-9">
         历史
+    </div>
+
+    <div id="text-x">
+        <img src="images/new.gif" alt="my">
     </div>
 
     <div id="text-10">
