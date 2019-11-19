@@ -1,0 +1,23 @@
+.head{
+    font:40px bold;
+}
+
+.line1 {
+    font-size: 20px;
+    color: green;
+}
+
+.line2{
+    color:blue;
+    height: 3em;
+}
+
+.line3{
+    font-size:30px;
+    color: green;
+}
+
+.line4{
+    font-style: italic;
+    background-color: brown;
+}
