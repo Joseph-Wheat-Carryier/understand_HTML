@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <title>
+        abc
+    </title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+    
+</head>
+<header>
+    <div id="head">
+    </div>
+</header>
+
+<body>
+<div id="first_line">
+    <div id="fst"></div>
+    <div id="sec">人员列表</div>
+    <button id="trd" onclick="javascript:bulletBox()"><span>添加人员<span></button>
+</div>
+
+<div id="mid">
+	<table id="tableHead">
+	<tr>
+    <td>
+        人员名称
+    </td>
+    <td>
+        年龄
+    </td>
+    <td>
+        编号
+    </td>
+    <td>
+        操作
+    </td>
+	</tr>
+    </table>
+</div>
+
+
+<table class="container">
+	<tbody>
+    </tbody>
+</table>
+
+
+<div id="demo_out">
+<div id="demo">
+	<div id="demo_head"><span>添加人员</span></div>
+	<div id="demo_body">
+		<table>
+		<tr><td>*人员名称:</td><td><input type="text" name="name"></td></tr> 
+		<tr><td>*年龄:</td><td><input type="text" name="age"></td></tr> 
+		<tr><td>*编号:</td><td><input type="text" name="number"></td></tr> 
+	    </table>
+	</div>
+	<div  id="demo_end">
+
+		<button onclick="javascript:addElem()" name="confirm"><div>确定</div></button>
+		<button onclick="javascript:cancle()" name="cancle"><div>取消</div></button>
+
+	</div>
+</div>
+</div>
+
+</body>
+
+<script src="./jQuery.js"></script>
+<script type="text/javascript">
+$("#demo").css({
+	"width":$(window).width()*1078/1800,
+});
+$("#demo").css({
+	"height":$("#demo").width()*440/1078
+});
+
+
+$("#demo_body").css({
+	"height":$("#demo").height()*302/436
+});
+
+$("#demo_end").css({
+	"height":$("#demo").height()-$("#demo_head").height()-$("#demo_body").height()-5
+});
+
+$("#demo_body>table").css({
+	"margin-top":$("#demo").height()*38/436,
+	"height":$("#demo").height()*200/436
+});
+
+
+$("td>input").css({
+	"width":$("#demo").width()*682/1078,
+	"height":$("#demo").height()*40/436
+});
+
+$("#demo_end>button").css({
+	"width":$("#demo").width()*80/1078,
+	"height":$("#demo").height()*40/436
+});
+
+
+/*$("#tableHead").css({
+	"width":Number($(window).width())
+})
+
+
+
+$(".container").css({
+	"width":$("#tableHead").width()+1
+})*/
+
+
+
+</script>
+
+<script type="text/javascript">
+	function bulletBox(){
+		$("body").append("<div id=\"grey\"></div>");
+		$("#demo,#demo_out").css({
+			"display":"block"
+		})
+	} 
+</script>
+
+
+<script type="text/javascript">
+function cancle(){
+	var	inputEle = $("input[type='text']");
+	$("#grey").remove();
+	$("#demo,#demo_out").css({"display":"none"});
+	$("#demo_end>button[name='confirm']").attr("onclick","javascript:addElem()");
+
+	for(var i=0;i<inputEle.length;i++){
+		inputEle[i].value=null;
+	}
+}
+
+
+function addElem(){
+	var	inputEle = $("input[type='text']");
+	$(".container>tbody").append("<tr><td></td><td></td><td></td><td></td></tr>");
+	var content_value = $(".container>tbody tr:last-child>td");
+	for(var i=0;i<content_value.length-1;i++){
+		$(content_value[i]).text(inputEle[i].value);
+	}
+	$(".container tr:last-child td:last-child").append("<button class=\"del_alt\" onclick=\"javascript:del()\" name=\"delete\">删除</button>");
+	$(".container tr:last-child td:last-child").append("<button class=\"del_alt\" onclick=\"javascript:alt_a()\" name=\"alter\">修改</button>");
+	$("")
+
+	cancle();
+}
+</script>
+
+<script type="text/javascript">
+	var alterValue;
+	var curValue;
+	function del(){
+		$("td").off("click").one("click","button",function (){
+			$(this).parent().parent().remove();
+		})
+	}
+
+	function alt_a(){
+		$("table").off("click").one("click","button[name='alter']",function(){
+			alterValue = $(this).parent().parent().children();
+			curValue =$("input[type='text']");
+			for(var i=0;i<alterValue.length-1;i++){
+				curValue[i].value=$(alterValue[i]).text();
+			}
+			bulletBox();
+			window.alert("开始");
+			$("#demo_end>button[name='confirm']").attr("onclick","javascript:alt_b()");
+		});	
+	}
+
+
+	function alt_b(){
+		var alterElem = $("input[type~='text']");
+		    $("#demo_end").off("click").one("click","button[name='confirm']",function(){
+				for(var i=0;i<alterValue.length-1;i++){
+					$(alterValue[i]).text(alterElem[i].value);
+				}
+		cancle();
+		})
+	}
+</script>
+
+</html>

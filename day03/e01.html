@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    <input type="checkbox" id="all_select" onclick="all_select()">全选
+    <br>
+    <input type="checkbox" name="language" >javascript
+    <input type="checkbox" name="language">css
+</label>
+
+<script>
+    function all_select() {
+        var box = document.getElementsByName("language");
+        console.log(box);
+        if (document.getElementById("all_select").getAttribute("checked") !== "checked") {
+            for (var i = 0; i < box.length; i++) {
+                box[i].setAttribute("checked", "checked");
+            }
+        }else {
+            for (var i = 0; i < box.length; i++) {
+                box[i].setAttribute("checked", "");
+            }
+        }
+    }
+</script>
+</body>
+</html>
